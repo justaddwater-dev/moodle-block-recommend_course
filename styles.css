@@ -1,0 +1,28 @@
+/* Sidebar: full width cards */
+.block_recommend_course .rui-course-card-deck {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
+
+.block_recommend_course .rui-course-card-deck .rui-course-card {
+    width: 100%;
+}
+
+.block_recommend_course .rui-course-cat{
+    display: none!important;
+}
+
+/* Center (main region): 5 cards per row */
+#region-main .block_recommend_course .rui-course-card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#region-main .block_recommend_course .rui-course-card-deck .rui-course-card, 
+#region-main .block_recommend_course .rui-course-card-deck .course-card {
+    flex: 1 1 calc(25% - 1.5rem);
+    max-width: calc(25% - 1.5rem);
+    min-width: 20%;
+}

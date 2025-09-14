@@ -1,0 +1,62 @@
+.block_recommend_course {
+    background: #fff!important;
+    padding:0px!important;
+}
+
+.block_recommend_course.card, .block_recommend_course.well, .que .block_recommend_course.history, .block_recommend_course.groupinfobox, .s-courses.card, .s-courses.well, .que .s-courses.history, .s-courses.groupinfobox {
+    background-color: #fff;
+}
+
+.block_recommend_course{
+    padding: 10px 0 0;
+    -webkit-box-shadow: rgb(0 0 0 / 5%) 0 0.5px 0, rgb(0 0 0 / 3%) 0 1px 0 1px, rgb(0 0 0 / 5%) 0 2px 4px;
+    box-shadow: rgb(0 0 0 / 5%) 0 0.5px 0, rgb(0 0 0 / 3%) 0 1px 0 1px, rgb(0 0 0 / 5%) 0 2px 4px;
+    border-radius: 5px;
+}
+
+ul.block_recommend_course-tabs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+ul.block_recommend_course-tabs li {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 0px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+ul.block_recommend_course-tabs li:hover {
+    background-color: #e2e2e2;
+}
+
+ul.block_recommend_course-tabs li.active {
+    background-color: #0073e6;
+    color: white;
+}
+
+ul.block_recommend_course-tabs li.active a{
+    background-color: #0073e6;
+    color: white;
+}
+
+ul.block_recommend_course-tabs li a, ul.tabs li a:hover{
+    text-decoration: none;
+}
+
+.block_recommend_course-col-50{
+    width: 40%;
+    float: left;
+    padding: 20px;
+}
+
+.block_recommend_course-col-50 table{
+    width: 100%;
+    max-width: 100%;
+}

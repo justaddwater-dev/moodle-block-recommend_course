@@ -1,0 +1,30 @@
+<div id="recommended_courses-view-{{uniqid}}" data-region="recommended_courses-view">
+    <div  data-region="view-content">
+    <div class="rui-course-card-deck dashboard-card-deck mt-3 one-row fixed-width-cards justify-content-start overflow-hidden row m-0">
+    {{#recommended.courses}}
+      {{> block_recommend_course/course-card }}
+    {{/recommended.courses}}
+    </div>
+    {{^recommended.courses}}
+    </br>
+    <div class="text-xs-center text-center m-t-3 no-records">
+       <p class="text-muted m-t-1">
+         {{#str}} nobottomcourses, block_recommend_course {{/str}}
+       </p>
+    </div>
+    {{/recommended.courses}}
+    </div>  
+    <div class="recommend-course-footer d-flex justify-content-start gap-2 mt-2">
+        <a href="{{allurl}}" class="btn btn-secondary btn-sm">
+            {{#str}} show_all, block_recommend_course {{/str}}
+        </a>
+        <a href="{{recommendurl}}" class="btn btn-primary btn-sm">
+            {{#str}} button, block_recommend_course {{/str}}
+        </a>
+        {{#canviewhistory}}
+        <a href="{{historyurl}}" class="btn btn-secondary btn-sm">
+            {{#str}} recommendation_history, block_recommend_course {{/str}}
+        </a>
+        {{/canviewhistory}}
+    </div>
+</div>

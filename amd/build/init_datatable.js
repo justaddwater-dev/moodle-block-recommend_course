@@ -1,0 +1,1 @@
+define(['jquery'],function($){return{DTinit:function(selector,options){require(['js/datatables.min.js'],function(){$(document).ready(function(){if($.fn.DataTable){$(selector).DataTable(options);}else{console.error('DataTables library failed to load.');}});});}};});
